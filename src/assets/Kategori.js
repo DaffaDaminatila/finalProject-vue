@@ -1,15 +1,15 @@
 const Kategori = [
   {
     nama: "WOMEN'S",
-    image: "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    image: "/img/women/skirt-orang/Denim Paneled A-Line Skirt.jpg",
   },
   {
     nama: "ACCESORIES",
-    image: "https://images.unsplash.com/photo-1427348693976-99e4aca06bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmlzaW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    image: "/img/photo1661032824.jpeg",
   },
   {
     nama: "MEN'S",
-    image: "",
+    image: "/img/men/vest-orang/Guardian Retroic Vest.jpg",
   },
 ];
 export default Kategori;

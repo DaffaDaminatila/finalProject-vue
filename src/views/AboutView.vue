@@ -1,7 +1,5 @@
 <template>
-  <div class="about">
-    <router-link to="/">sadas</router-link>
-  </div>
+  <div class="about"></div>
   <ProductJual />
 </template>
 
