@@ -5,7 +5,7 @@ const Kategori = [
   },
   {
     nama: "ACCESORIES",
-    image: "/img/photo1661032824.jpeg",
+    image: "/img/accses.jpeg",
   },
   {
     nama: "MEN'S",
