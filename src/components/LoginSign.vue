@@ -8,48 +8,50 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">SHOP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="">REVIEW</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-dark" href=""><router-link to="/">HOME</router-link></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href=""><router-link to="/about">PRODUCT</router-link></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href=""><router-link to="/login">LOGIN</router-link></a>
-            </li>
-          </ul>
-        </div>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
       </div>
     </nav>
-    <main class="form-signin w-100 m-auto">
-      <form>
-        <img class="mb-4" src="/img/logo_small_icon_only.png" alt="" width="60" height="60" />
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <div class="container-fluid">
+      <h5>Not a member?Sign up now</h5>
 
-        <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-          <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-          <label for="floatingPassword">Password</label>
-        </div>
+      <main class="form-signin w-100 m-auto">
+        <form>
+          <img class="mb-4" src="/img/logo_small_icon_only.png" alt="" width="60" height="60" />
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-        <div class="checkbox mb-3">
-          <label> <input type="checkbox" value="remember-me" /> Remember me </label>
-        </div>
-        <router-link to="/"><button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button></router-link>
-        <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
-      </form>
-    </main>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+            <label for="floatingPassword">Password</label>
+          </div>
+
+          <div class="checkbox mb-3">
+            <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+          </div>
+          <router-link to="/"><button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button></router-link>
+          <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+        </form>
+      </main>
+    </div>
   </div>
 </template>
 
