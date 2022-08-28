@@ -1,5 +1,5 @@
 <template>
-  <div class="sign bgg">
+  <div class="signup">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -33,27 +33,34 @@
     <!-- END -->
 
     <div class="container-fluid">
-      <h5 class="notmember">Not a member?<router-link to="/signup">Sign up now</router-link></h5>
+      <h5 class="notmember">Already a member?<router-link to="/login">Sign in</router-link></h5>
 
       <!-- SIGN IN -->
-      <main class="form-signin w-100 m-auto">
+      <main class="form-signup w-100 m-auto">
         <form>
           <img class="mb-4" src="/img/logo_small_icon_only.png" alt="" width="60" height="60" />
           <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
           <div class="form-floating">
+            <input class="form-control" type="text" name="username" id="floatinginput" placeholder="username" />
+            <label for="floatingUsername">Username</label>
+          </div>
+          <div class="form-floating">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
             <label for="floatingInput">Email address</label>
           </div>
+
           <div class="form-floating">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
             <label for="floatingPassword">Password</label>
           </div>
 
           <div class="checkbox mb-3">
-            <label> <input type="checkbox" value="remember" /> Remember me </label>
+            <label style="font-size: x-small">
+              <input type="checkbox" value="Creating" /> Creating an account means you’re okay with our <i style="color: blue">Terms of Service, Privacy Policy</i>, and our default <i style="color: blue">Notification Settings</i>.
+            </label>
           </div>
-          <router-link to="/"><button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button></router-link>
+          <router-link to="/login"><button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button></router-link>
           <p class="mt-2 mb-0 text-muted">&copy; 2022</p>
         </form>
       </main>
@@ -64,14 +71,17 @@
 
 <script>
 export default {
-  name: "LoginSign",
+  name: "DaftarUp",
   props: {
     msg: String,
   },
 };
 </script>
 
-<style>
+<style scope>
+body {
+  height: 100%;
+}
 .notmember {
   position: absolute;
   left: 1080px;
@@ -89,7 +99,7 @@ body {
   background-size: 50%;
 }
 
-.form-signin {
+.form-signup {
   position: relative;
   top: 60px;
   left: 300px;
@@ -97,17 +107,17 @@ body {
   padding: 15px;
 }
 
-.form-signin .form-floating:focus-within {
+.form-signup .form-floating:focus-within {
   z-index: 2;
 }
 
-.form-signin input[type="email"] {
+.form-signup input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.form-signin input[type="password"] {
+.form-signup input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;

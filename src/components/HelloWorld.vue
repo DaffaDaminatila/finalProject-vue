@@ -51,6 +51,25 @@ import Kategori from "@/assets/Kategori";
       </div>
       <!-- END -->
 
+      <!-- CARD -->
+      <section id="kategori">
+        <div class="container p-3 p-md-5 text-center prod">
+          <h3 style="font-family: poppins">Product Recommendation</h3>
+          <div class="row">
+            <div class="col-lg-3 col-sm-4 mt-4 carde" v-for="data in Kategori" :key="data">
+              <div class="card">
+                <router-link to="/about"><img :src="data.image" class="card-img-top gambar" alt="..." /></router-link>
+                <div class="text-center">
+                  <h5 class="card-text title-name">{{ data.nama }}</h5>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END -->
+
       <!-- Op -->
       <section id="product">
         <div class="container p-3 p-md-5 mt-5 text-center prod">
@@ -107,26 +126,12 @@ import Kategori from "@/assets/Kategori";
         </div>
       </section>
       <!-- END -->
-
-      <!-- CARD -->
-      <section id="product">
-        <div class="container p-3 p-md-5 text-center prod">
-          <h3 style="font-family: poppins">Product Recommendation</h3>
-          <div class="row">
-            <div class="col-lg-3 col-sm-4 mt-4 carde" v-for="data in Kategori" :key="data">
-              <div class="card">
-                <router-link to="/about"><img :src="data.image" class="card-img-top gambar" alt="..." /></router-link>
-                <div class="text-center">
-                  <h5 class="card-text title-name">{{ data.nama }}</h5>
-                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
     <!-- EMD -->
+
+    <!-- REVIEW -->
+
+    <!-- END -->
 
     <!-- FOOTER -->
     <section id="footer">
