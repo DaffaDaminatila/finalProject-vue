@@ -125,6 +125,7 @@ import Kategori from "@/assets/Kategori";
           <!-- <button class="rounded bg-a">See More</button> -->
         </div>
       </section>
+
       <!-- END -->
     </div>
     <!-- EMD -->
@@ -262,6 +263,8 @@ export default {
 }
 .card {
   width: 15rem;
+  border-radius: 15px;
+  border: 1px;
 }
 .cardd {
   margin-right: auto;
