@@ -61,6 +61,7 @@ import Kategori from "@/assets/Kategori";
                 <router-link to="/about"><img :src="data.image" class="card-img-top gambar" alt="..." /></router-link>
                 <div class="text-center">
                   <h5 class="card-text title-name">{{ data.nama }}</h5>
+
                   <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
               </div>
@@ -239,7 +240,7 @@ export default {
 }
 .prod {
   position: relative;
-  background-color: #dcd7c9;
+  background-color: #e3e2e7;
   height: 499px;
 }
 .new-collection {
@@ -251,7 +252,7 @@ export default {
   float: left;
 }
 .header {
-  background-color: #dcd7c9;
+  background-color: #e3e2e7;
   left: 100px;
 }
 .footer {
@@ -282,5 +283,9 @@ export default {
 .carde {
   position: relative;
   left: 150px;
+}
+
+.navbar {
+  background: #e3e2e7;
 }
 </style>

@@ -99,7 +99,7 @@ export default {
   font-family: poppins;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -111,9 +111,11 @@ html{
 }
 .prode {
   background-color: #2c3639;
-
 }
 .judul {
   color: white;
+}
+.navbar {
+  background: #e3e2e7;
 }
 </style>

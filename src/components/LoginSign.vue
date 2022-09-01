@@ -112,4 +112,8 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.navbar {
+  background: #e3e2e7;
+}
 </style>
