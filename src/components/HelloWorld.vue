@@ -181,7 +181,7 @@ import Kategori from "@/assets/Kategori";
             </div>
           </div>
           <div>
-            <p>&copy; 2022 Balenda, Inc. All rights reserved.</p>
+            <p>&copy; 2022 Balenda, Inc. All rights reserved. Kelompok 22</p>
           </div>
         </footer>
       </div>
